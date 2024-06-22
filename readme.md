@@ -5,7 +5,4 @@
 
 This repository is a collection of code and solutions for practicing Data Structures and Algorithms (DSA). It contains problems and solutions written in both C++ and Java.
 
-## Repository Structure
-
-The repository is organized into two main sections based on the programming language:
 
