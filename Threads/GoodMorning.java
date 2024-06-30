@@ -14,6 +14,11 @@ class WelcomeThread extends Thread{
     public void run(){
         int i =0;
         while(i<2000){
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException ex) {
+                System.out.println(ex);
+            }
         System.out.println("Welcome");
         i++;
         }

@@ -26,6 +26,9 @@ public class Priority {
         Task2 t2 = new Task2();
 
         t1.setPriority(Thread.MAX_PRIORITY);
+
+        //set priority range(1,10)
+        t1.setPriority(1);
         
         t1.start();
         // t2.start();
