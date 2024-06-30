@@ -1,22 +1,29 @@
-import java.util.Scanner;
-
-public class test{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-    System.out.print("Enter the book name: ");
-    String book = sc.next();
-
-    String availableBooks[]=new String[4];
-    for(int i = 0; i<availableBooks.length;i++){
-        if(availableBooks[i]==null){
-            availableBooks[i]=book;
-            break;
+class MyThread extends Thread{
+    @Override
+    public void run(){
+        int i = 0;
+        while(i<20000){
+            System.out.println("I Love Jeevitha");
+            i++;
         }
     }
-    for (String elem : availableBooks) {
-        System.out.println(elem);
-        
+}
+
+class MyThread2 extends Thread{
+    @Override
+    public void run(){
+        int i = 0;
+        while(i<20000){
+            System.out.println("I Love Sharmila");
+            i++;
+        }
     }
-        
+}
+public class test{
+    public static void main(String args[]){
+        MyThread t1 = new MyThread();
+        MyThread2 t2 = new MyThread2();
+        t1.start();
+        t2.start();
     }
 }
