@@ -102,17 +102,21 @@ class Maths{
 
 public class Calculator {
     public static void main(String[] args) {
+        System.out.println("Welcome to try catch Calculator!!!");
+        System.out.println(" ");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first number: ");
         int a = sc.nextInt();
         System.out.print("Enter the first number: ");
         int b = sc.nextInt();
 
+        System.out.println(" ");
         System.out.println("Choose a calculation option: ");
         System.out.println("1 > Addition");
         System.out.println("2 > Subtraction");
         System.out.println("3 > Multiplication");
         System.out.println("4 > Division");
+        System.out.println(" ");
 
         System.out.print("Enter your option? ");
         int option = sc.nextInt();
