@@ -102,7 +102,8 @@ class Maths{
 
 public class Calculator {
     public static void main(String[] args) {
-        System.out.println("Welcome to try catch Calculator!!!");
+        System.out.println("Welcome to try catch Calculator!!! ");
+        System.out.println("Make sure the numbers you input are Integers.");
         System.out.println(" ");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first number: ");
