@@ -3,13 +3,15 @@ public class Last_First {
 
 static void get(String str, int len){
     if(len == 0){
-        System.out.print(" "+str.charAt(len));
+        System.out.print(str.charAt(len)+" ");
         return;
     }
+    
+    get(str, len-1);
+
     if(len == (str.length()-1)){
         System.out.print(str.charAt(len));
     }
-    get(str, len-1);
 }
 
     public static void main(String[] args) {
